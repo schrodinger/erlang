@@ -8,6 +8,7 @@ version           '4.0.0'
 
 depends           'apt', '>= 1.7.0'
 depends           'yum', '~> 3.0'
+depends           'zypper'
 depends           'yum-epel'
 depends           'yum-erlang_solutions'
 depends           'build-essential'

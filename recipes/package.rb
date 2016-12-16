@@ -45,4 +45,12 @@ when 'rhel'
 
   include_recipe 'yum-epel'
   package 'erlang'
+when 'suse'
+  zypper_repo 'erlang' do
+    uri 'http://download.opensuse.org/repositories/devel:/languages:/erlang/SLE_12/'
+    key 'http://download.opensuse.org/repositories/devel:/languages:/erlang/SLE_12/repodata/repomd.xml.key'
+    autorefresh true
+  end
+
+  package 'erlang'
 end
